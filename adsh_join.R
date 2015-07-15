@@ -50,5 +50,14 @@ colnames(tags.count) <- c("tag", "Freq")
 agg.merged <- merge(agg.2009, tags.count, by ="tag")
 
 ### Plots ###
-agg.subset <- subset(agg.merged$open.mean, agg.merged$Freq > 100)
-barplot(sort(agg.subset))
+agg.subset <- subset(agg.merged, agg.merged$Freq > 30)
+barplot(sort(agg.subset$open.mean))
+
+agg.top <- subset(agg.subset, agg.subset$open.mean > 43 | 
+                    agg.subset$open.mean < 27 )
+
+agg.values <- agg.top$open.mean
+#names(agg.values) <- agg.top$tag
+barplot(sort(agg.values), , col = palette(rainbow(24)))
+legend(legend = agg.top$tag, x = "topleft", text.width = 2,
+       fill = palette(rainbow(24)), cex = .7, , bty = "n" )
