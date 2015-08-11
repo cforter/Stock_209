@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="mainHeader">
       <div class="inner">
         <h1>The 2008 Financial Crisis: <span style="font-size: 24px; vertical-align: middle;">W209 Final project with S&amp;P 500 data</span></h1>
                 <!--
@@ -30,7 +30,16 @@
       </div>
     </header>
 
-      <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 100%; height: 100%; margin-left: auto; margin-right: auto;'><noscript><a href='#'><img alt='How to Survive a Financial Crisis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProject-2008FinancialCrisis&#47;MainStory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1900' height='900' style='display:none'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='209FinalProject-2008FinancialCrisis&#47;MainStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProject-2008FinancialCrisis&#47;MainStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object></div>
+      <script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 100%; height: 100%; margin-left: auto; margin-right: auto;'><noscript><a href='#'><img alt='How to Survive a Financial Crisis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProject-2008FinancialCrisis&#47;MainStory&#47;1_rss.png' style='border: none' /></a></noscript><object id="vizObject" class='tableauViz vizSize' style='display:none'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='site_root' value='' /><param name='name' value='209FinalProject-2008FinancialCrisis&#47;MainStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;20&#47;209FinalProject-2008FinancialCrisis&#47;MainStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /><param name='showTabs' value='y' /><param name='bootstrapWhenNotified' value='true' /></object>
+
+        <script>
+        
+          var obj = document.getElementById('vizObject');
+          obj.width = window.innerWidth;
+          obj.height = window.innerHeight - document.getElementById('mainHeader').getBoundingClientRect().height;
+        
+        </script>
+      </div>
         
 <!--
     <div id="content-wrapper">
