@@ -451,7 +451,8 @@ header {
   padding-top: 8px;
   padding-bottom: 8px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  /*background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;*/
+  background-color: rgb(51, 123, 207);
   border-bottom: solid 1px #275da1;
 }
 
